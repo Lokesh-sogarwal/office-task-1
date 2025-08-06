@@ -111,7 +111,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 51px;
 }
 
 .text-content {
@@ -546,9 +545,18 @@ nav {
     padding-right: 10px;
 }
 
+.layout-5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+    padding: 40px 0;
+}
+
 #down-learn {
     width: 100%;
-    height: 44px;
     border: 1px solid #96BB7C;
     border-radius: 37px;
     margin-bottom: 25px;
@@ -653,7 +661,7 @@ nav {
 .bottom {
 
     width: 100%;
-    height: 317px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -851,18 +859,14 @@ nav {
 }
 
 .footer-columns {
-    max-width: 1200px;
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
+    gap: 70px;
 }
 
 .footer-column {
     background-color: white;
-    flex: 1 1 200px;
-    min-width: 180px;
 }
 
 .footer-column h4 {
@@ -895,7 +899,7 @@ nav {
 
 
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 521px) {
     .header {
         /* background: black; */
         padding: 10px;
@@ -918,20 +922,38 @@ nav {
         gap: 10px;
     }
 
-    /* #right {
+    .right-parent {
         display: none;
-    } */
-    #left{
-        width: 100%;
-        
     }
 
-    .but button {
+    #left {
         width: 100%;
     }
 
-    .content {
-        flex-direction: column-reverse;
+    .down {
+        flex-direction: column;
+    }
+
+    .down-card-parent {
+        width: 100%;
+    }
+
+    .down-card-body {
+        padding: 5px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .bottom-card {
+        padding: 24px 5px;
+        border-bottom: 1px solid #00000029;
+        width: 100%;
+    }
+
+    .but {
+        width: 100%;
     }
 
     .text-content {
@@ -962,20 +984,35 @@ nav {
         max-width: 400px;
     }
 
+    .layout-4-upper-content p {
+        font-size: 14px;
+    }
 
-}
+    .layout-4-upper-content h1 {
+        font-size: 18px;
+    }
 
-@media screen and (max-width: 1000px) {
-    .header {
-        /* background: black; */
-        padding: 10px;
+    .down-card-body #newprice {
+        font-size: 18px;
+    }
+
+    #Number {
+        font-size: 24px !important; 
+    }
+        .stats-container span p {
+        font-size: 12px !important;
+    }
+    .links-footer{
+        align-items: center;
     }
 
 
-    .links-footer {
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        /* background: black; */
+        padding: 10px;
     }
 
     .links {
@@ -1010,10 +1047,6 @@ nav {
         width: 100%;
     }
 
-    #left {
-        width: 35%;
-    }
-
     #right-parent {
         width: 60%;
         position: relative;
@@ -1040,9 +1073,9 @@ nav {
         width: 100%;
     }
 
-    .content {
+    /* .content {
         gap: 65px;
-    }
+    } */
 
     .card-content {
         padding: 2px 8px;
@@ -1104,4 +1137,19 @@ nav {
     .profile p {
         font-size: 10px;
     }
+    .newsletter{
+        padding: 80px 20px;
+    }
+}
+@media screen and (min-width: 521px) and (max-width: 769px) {
+        .footer-columns { 
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 30px !important;
+    }
+    .links-footer{
+        align-items: center ;
+    }
+    
 }
