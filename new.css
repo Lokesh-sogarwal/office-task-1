@@ -244,7 +244,7 @@ nav {
 .card-parent {
     width: 33.33%;
     max-height: 300px;
-    padding: 10px;
+    padding:10px 10px ;
 }
 
 #circle {
@@ -308,7 +308,7 @@ nav {
 }
 
 .stats-container p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #252B42;
     font-family: montserrat;
@@ -317,7 +317,7 @@ nav {
 }
 
 #Number {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 700;
     color: #96BB7C;
     font-family: montserrat;
@@ -826,6 +826,7 @@ nav {
 }
 
 .newsletter-form input[type="email"] {
+    width: 70%;
     flex: 1;
     padding: 14px 20px;
     font-size: 16px;
@@ -835,6 +836,7 @@ nav {
 }
 
 .newsletter-form button {
+    width: 30%;
     background-color: #96BB7C;
     color: white;
     border: none;
@@ -904,6 +906,10 @@ nav {
         /* background: black; */
         padding: 10px;
     }
+    #join1,#get{
+        font-size: 13px;
+        font-weight: bold;
+    }
 
     .links {
         display: none;
@@ -929,9 +935,29 @@ nav {
     #left {
         width: 100%;
     }
+        #left h4 {
+        font-size: 18px !important;
+    }
+    #left h5
+ {
+        font-size: 20px !important;
+    }
+    .card-text{
+        font-size: 13px;
+    }
 
     .down {
         flex-direction: column;
+        gap: 30px;
+    }
+    .down-card-body span {
+        font-size: 13px !important;
+    }
+    #card-text {
+        font-size: 15px !important;
+    }
+        .bottom-card p {
+        font-size: 12px !important;
     }
 
     .down-card-parent {
@@ -971,6 +997,10 @@ nav {
     .footer {
         padding: 40px 20px;
     }
+    #circle{
+        width: 50px !important;
+        height: 50px !important;
+    }
 
     .footer-columns {
         flex-direction: column;
@@ -1004,6 +1034,10 @@ nav {
     }
     .links-footer{
         align-items: center;
+    }
+    .newsletter-form button{
+        padding: 0 !important;
+
     }
 
 
@@ -1071,6 +1105,7 @@ nav {
 
     .card-parent {
         width: 100%;
+        padding: 13px 0px
     }
 
     /* .content {
