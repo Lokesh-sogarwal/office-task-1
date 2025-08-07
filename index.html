@@ -18,18 +18,26 @@
                 <span id="BrName">
                     <img src="logo.png" alt="Logo">
                 </span>
-                <div class="links">
-                    <a href="">Home</a>
-                    <a href="">Product</a>
-                    <a href="">Pricing</a>
-                    <a href="">Contact</a>
+                
+                <div class="links-wrap">
+                    <div class="links" id="links">
+                        <a href="">Home</a>
+                        <a href="">Product</a>
+                        <a href="">Pricing</a>
+                        <a href="">Contact</a>
+                    </div>
+                    <div class="buttons">
+                        <button id="login">Login</button>
+                        <button id="Join">Join Us
+                            <i class="fa-solid fa-arrow-right" id="arrow"></i>
+                        </button>
+                    </div>
+
                 </div>
-                <div class="buttons">
-                    <button id="login">Login</button>
-                    <button id="Join">Join Us
-                        <i class="fa-solid fa-arrow-right" id="arrow"></i>
-                    </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
+
             </nav>
         </div>
         <div class="container">
@@ -43,7 +51,7 @@
                         </h4>
                     </div>
                     <div class="but">
-                        <button id="join1">Join Us</button>
+                        <!-- <button id="join1">Join Us</button> -->
                         <button id="get"> Get Quote Now </button>
                         <button class="learn"> Learn More </button>
                     </div>
@@ -454,13 +462,13 @@
             <div class="footer-column">
                 <h4>Legal</h4>
                 <div class="links-footer">
-                    
+
                     <a href="#">About Us</a>
                     <a href="#">Carrier</a>
                     <a href="#">We are hiring</a>
                     <a href="#">Blog</a>
                 </div>
-               
+
             </div>
             <div class="footer-column">
                 <h4>Features</h4>
@@ -474,27 +482,51 @@
             </div>
             <div class="footer-column">
                 <h4>Resources</h4>
-                    <div class="links-footer">
+                <div class="links-footer">
 
-                        <a href="#">IOS & Android</a>
-                        <a href="#">Watch a Demo</a>
-                        <a href="#">Customers</a>
-                        <a href="#">API</a>
-                    </div>
+                    <a href="#">IOS & Android</a>
+                    <a href="#">Watch a Demo</a>
+                    <a href="#">Customers</a>
+                    <a href="#">API</a>
+                </div>
             </div>
             <div class="footer-column">
                 <h4>Get In Touch</h4>
                 <div class="links-footer">
 
-                    <a href=""><i class="fa-solid fa-phone" style="color: #96BB7C; background:transparent"></i> (480) 555-0103</a>
-                    <a href=""><i class="fa-solid fa-location-dot" style="color: #96BB7C; background:transparent"></i> 4517 Washington Ave.
+                    <a href=""><i class="fa-solid fa-phone" style="color: #96BB7C; background:transparent"></i> (480)
+                        555-0103</a>
+                    <a href=""><i class="fa-solid fa-location-dot" style="color: #96BB7C; background:transparent"></i>
+                        4517 Washington Ave.
                         Manchester, Kentucky 39495</a>
-                    <a href=""><i class="fa-solid fa-envelope" style="color: #96BB7C; background:transparent"></i> debra.holt@example.com</a>
+                    <a href=""><i class="fa-solid fa-envelope" style="color: #96BB7C; background:transparent"></i>
+                        debra.holt@example.com</a>
                 </div>
             </div>
         </div>
     </footer>
     </div>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger');
+const icon = hamburgerBtn.querySelector('i');
+const linksWrap = document.querySelector('.links-wrap');
+
+hamburgerBtn.addEventListener('click', () => {
+    linksWrap.classList.toggle('active');
+
+    // Toggle icon
+    if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    }
+});
+
+  </script>
+
 
 
 </body>
