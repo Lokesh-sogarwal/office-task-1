@@ -906,17 +906,16 @@ nav {
 .links-footer a:hover {
     color: #96BB7C;
 }
+#login1{
+        display: none;
+    }
 
 
 
 @media screen and (max-width: 521px) {
-    .header {
-        /* background: black; */
-        padding: 10px;
-    }
+ 
 
-    #join1,
-    #get {
+    .but #join1 {
         font-size: 13px;
         font-weight: bold;
     }
@@ -1047,16 +1046,49 @@ nav {
         padding: 0 !important;
 
     }
+    
 
 
 
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
 
-
+    .learn{
+        display: none;
+    }
+    .but #join1{
+        display: block;
+    }
+    #get{
+        display: none;
+    }
     #BrName {
         width: 12%;
+    }
+    #login1{
+        display: block;
+        width: 100%;
+    height: 52px;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+    background-color: #96BB7C;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-family: montserrat;
+    }
+    #join{
+        display: flex;
+        width: 100%;
+    height: 52px;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+    background-color: #96BB7C;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-family: montserrat;
     }
 
     .upper {
@@ -1099,10 +1131,6 @@ nav {
         width: 60%;
         position: relative;
         /* padding: 8px; */
-    }
-
-    .links-wrap {
-        width: 38% !important;
     }
 
     #right {
@@ -1218,15 +1246,13 @@ nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: white;
-        padding: 15px;
+        top: 66px;
+        /* background-color: white; */
         gap: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
         z-index: 999;
     }
-    .links ,.links a, .buttons, #login{
+    .links ,.links a{
         background-color: transparent;
     }
 
@@ -1239,19 +1265,42 @@ nav {
         display: flex;
         align-items: center;
         gap: 10px;
+        width: 100%;
+        height: 100vh;
     }
 
-    .links,
-    .buttons {
+    .links {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        height: 70%;
     }
+    .buttons{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width:321px){
     #Join{
             padding: 12px 7px !important;
+    }
+    .stats-container{
+        padding:50px 0 ;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .layout-2-left h2{
+        font-size: 28px;
+    }
+    .layout-2-left p{
+        font-size: 12px;
+    }
+    #Number{
+        font-size: 36px !important;
+    }
+        .stats-container span p {
+        font-size: 15px !important;
     }
 }
 
@@ -1259,4 +1308,8 @@ nav {
     display: none;
     cursor: pointer;
     font-size: 24px;
+}
+.no-scroll{
+    height: 100vh;
+    overflow: hidden;
 }

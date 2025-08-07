@@ -16,7 +16,7 @@
         <div class="header">
             <nav>
                 <span id="BrName">
-                    <img src="logo.png" alt="Logo">
+                    <img src="logo.png" alt="Logo" id="logo">
                 </span>
                 
                 <div class="links-wrap">
@@ -33,6 +33,7 @@
                         </button>
                     </div>
 
+ 
                 </div>
                 <div class="hamburger" id="hamburger">
                     <i class="fa-solid fa-bars"></i>
@@ -51,7 +52,8 @@
                         </h4>
                     </div>
                     <div class="but">
-                        <!-- <button id="join1">Join Us</button> -->
+                        <button id="login1" >Login</button>
+                        <button id="join1">Join Us</button>
                         <button id="get"> Get Quote Now </button>
                         <button class="learn"> Learn More </button>
                     </div>
@@ -511,9 +513,26 @@
     const hamburgerBtn = document.getElementById('hamburger');
 const icon = hamburgerBtn.querySelector('i');
 const linksWrap = document.querySelector('.links-wrap');
+const main = document.querySelector('.main');
+const logo = document.getElementById('BrName');
+const logoImg = document.getElementById('logo');
 
 hamburgerBtn.addEventListener('click', () => {
     linksWrap.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+       if (linksWrap.classList.contains('active')) {
+        main.style.width = "100%";
+        hamburgerBtn.style.paddingRight = "10.5%";
+        logo.style.paddingLeft = "10%";
+        logoImg.style.width = "80%";
+
+    } else {
+        main.style.width = ""; // resets to CSS/default
+         hamburgerBtn.style.paddingRight = "";
+          logo.style.paddingLeft = "";
+          logoImg.style.width = "";
+    }
+    
 
     // Toggle icon
     if (icon.classList.contains('fa-bars')) {
