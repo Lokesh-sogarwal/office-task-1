@@ -1241,6 +1241,9 @@ nav {
     #hamburger {
         display: block !important;
     }
+    #hamburger:hover{
+        background-color: transparent;
+    }
 
     .links-wrap {
         display: none;
